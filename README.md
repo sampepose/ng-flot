@@ -1,12 +1,18 @@
 ng-flot
 =======
 
-ng-flot provides a collection of Angularjs directives for displaying Flotjs graphs.
+ng-flot provides a collection of Angularjs directives for displaying [Flotjs](http://www.flotcharts.org/) graphs.
 
 ## Getting Started
-1. Include the ng-flot.js file in your project
+1. Include the angularjs, jQuery, and Flot library files in your project
+1. Add the ng-flot.js file to your project
 2. Add `ng-flot` to your list of dependencies in your main module
 3. You're good to go! See below for how to use the directives!
+
+## Running the example
+1. `cd` to the example/ subdirectory
+2. Run `npm install`
+3. Run `grunt` and access the server at [http://localhost:9001](http://localhost:9001)
 
 ## Directives
 #### ng-flot
@@ -37,3 +43,10 @@ This data must be formatted as follows for each graph type:
 This directive is used alongside the main graph directive.
 
 It is used to group graphs into a "family". The name passed into the directive links families together, not scope inheritance. The directive ensures all graphs in the family have the same x and y-axis values. This is useful for comparing multiple graphs of similar data on the same page.
+
+## Changelog
+v0.1 - 12/20/13 - initial release
+
+## TODO
+* Realtime graphs
+* Right now they're static 500x500 fixed size...
