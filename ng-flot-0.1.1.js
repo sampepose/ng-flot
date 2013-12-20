@@ -1,6 +1,6 @@
 /*
  ng-flot: Angular wrapper for Flotjs graphs
- Version 0.1
+ Version 0.1.1
  Author: Sam Pepose
  */
 
@@ -9,7 +9,7 @@ angular.module('ng-flot', [])
 
      <div ng-flot="bar" data-graph-data="data" data-graph-title="My Graph" data-graph-class="graphClass" data-graph-options="graphOpts"></div>
 
-     Main directive for a Flot graph.
+     Main directive for a Flot graph. Must be wrapped with an element w/ a width.
 
      ng-flot="bar | pie | line" [REQUIRED]
      graph-data="data" [REQUIRED]
@@ -25,9 +25,9 @@ angular.module('ng-flot', [])
         return {
             restrict: "A",
             priority: 1,
-            template: "<div style='width: 500px; display: inline-block;'>" +
+            template: "<div style='width: 100%;display: inline-block;'>" +
                 "<div ng-bind='graphTitle' style='text-align: center;'></div>" +
-                "<div ng-class='graphClass' class='graph' style='width: 500px; height: 500px'></div>" +
+                "<div ng-class='graphClass' class='graph' style='width: 100%; height: 100%'></div>" +
                 "</div>",
             replace: true,
             scope: {

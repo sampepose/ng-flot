@@ -21,7 +21,9 @@ ng-flot provides a collection of Angularjs directives for displaying [Flotjs](ht
 data-graph-options="graphOpts"></div>
 ```
 
-This is the main directive for a Flot graph. The attributes are explained here:
+This is the main directive for a Flot graph. Wherever this directive is used, it **must be wrapped with an element** that has a set width and height.
+
+The attributes are explained here:
 
 `ng-flot="bar | pie | line"` This is **required** to get everything rolling. Pass in the type of graph you want.
 
@@ -45,8 +47,9 @@ This directive is used alongside the main graph directive.
 It is used to group graphs into a "family". The name passed into the directive links families together, not scope inheritance. The directive ensures all graphs in the family have the same x and y-axis values. This is useful for comparing multiple graphs of similar data on the same page.
 
 ## Changelog
-v0.1 - 12/20/13 - initial release
+v0.1.1 - 12/20/13 - removed fixed height graphs
+
+v0.1.0 - 12/20/13 - initial release
 
 ## TODO
 * Realtime graphs
-* Right now they're static 500x500 fixed size...

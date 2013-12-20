@@ -6,11 +6,19 @@
 <body ng-controller="MainCtrl">
 <h1>ng-flot examples</h1>
 
-<div ng-flot="bar" graph-data="barData" data-graph-title="Bar Graph" data-graph-class="graphClass" data-graph-options="graphOpts"></div>
-<div ng-flot="pie" graph-data="pieData" data-graph-title="Pie Graph" data-graph-class="graphClass"></div>
+<div style="width: 50%; height: 50%; float: left">
+    <div ng-flot="bar" graph-data="barData" data-graph-title="Bar Graph" data-graph-class="graphClass" data-graph-options="graphOpts"></div>
+</div>
+<div style="width: 50%; height: 50%; float: right">
+    <div ng-flot="pie" graph-data="pieData" data-graph-title="Pie Graph" data-graph-class="graphClass"></div>
+</div>
 <br>
-<div ng-flot="line" graph-data="lineData" data-graph-title="Line Graph" data-graph-class="graphClass" graph-family="line"></div>
-<div ng-flot="line" graph-data="lineData2" data-graph-title="Line Graph" data-graph-class="graphClass" graph-family="line"></div>
+<div style="width: 50%; height: 50%; float: left">
+    <div ng-flot="line" graph-data="lineData" data-graph-title="Line Graph" data-graph-class="graphClass" graph-family="line"></div>
+</div>
+<div style="width: 50%; height: 50%; float: right">
+    <div ng-flot="line" graph-data="lineData2" data-graph-title="Line Graph" data-graph-class="graphClass" graph-family="line"></div>
+</div>
 
 <script src="lib/angular-1.2.0.js"></script>
 <script src="lib/jquery-1.10.2.min.js"></script>
@@ -18,7 +26,7 @@
 <script src="lib/jquery.flot.pie.js"></script>
 <script src="lib/jquery.flot.resize-0.8.js"></script>
 <script src="lib/jquery.flot.tooltip.js"></script>
-<script src="../ng-flot-0.1.js"></script>
+<script src="../ng-flot-0.1.1.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
