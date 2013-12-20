@@ -1,6 +1,6 @@
 /*
  ng-flot: Angular wrapper for Flotjs graphs
- Version 0.1.1
+ Version 0.1.2
  Author: Sam Pepose
  */
 
@@ -29,7 +29,6 @@ angular.module('ng-flot', [])
                 "<div ng-bind='graphTitle' style='text-align: center;'></div>" +
                 "<div ng-class='graphClass' class='graph' style='width: 100%; height: 100%'></div>" +
                 "</div>",
-            replace: true,
             scope: {
                 graphData: "&",
                 graphDataUrls: "&",
